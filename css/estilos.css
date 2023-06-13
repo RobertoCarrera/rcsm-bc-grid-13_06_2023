@@ -1,0 +1,98 @@
+body{
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: black;
+}
+
+#menu{
+    display: flex;
+    height: 10vh;
+}
+
+#contenido{
+    height: 90vh;
+}
+
+
+/*#########################*/
+/*#######ESTILOS MENÚ######*/
+/*#########################*/
+
+#logo{
+    flex-grow: 1;
+    background-image: url(../img/netflix_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#enlaces{
+    flex-grow: 4;
+    display: flex;
+    align-items: center;
+}
+
+#herramientas{
+    flex-grow: 1;
+}
+
+
+#enlaces ul{
+    display: flex;
+}
+
+#enlaces li{
+    list-style: none;
+    margin-right: 2em;
+    color: white;
+    font-size: 18px;
+}
+
+#herramientas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#herramientas span{
+    font-size: 40px;
+    color: white;
+}
+
+#herramientas img{
+    border-radius: 5px;
+}
+
+/*#########################*/
+/*#####ESTILOS CONTENIDO###*/
+/*#########################*/
+
+#contenido{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.3em;
+    padding: 0 3em;
+}
+
+.categoria{
+    grid-column: 1 / 6;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: end;
+}
+
+.categoria h1{
+    margin: 0;
+}
+
+.imagen_contenido{
+    background-image: url(../img/pelicula.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+}
