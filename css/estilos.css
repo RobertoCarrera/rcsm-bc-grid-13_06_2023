@@ -85,8 +85,9 @@ body{
     align-items: end;
 }
 
-.categoria h1{
+.categoria h2{
     margin: 0;
+    font-size: 24px;
 }
 
 .imagen_contenido{
